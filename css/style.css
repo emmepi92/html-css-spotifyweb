@@ -1,15 +1,48 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 .container-fluid {
     height: 100vh;
-    background-color: red;
 }
 
 main {
     height: 100vh;
 }
 
-main .sidebar {
-    background-color: salmon;
+/* ASIDE-MENU  */
+main .aside-menu {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    font-size: 13px;
 }
+.logo img {
+    width: 150px;
+    padding-bottom: 20px;
+}
+
+.aside-menu ul:first-of-type {
+    line-height: 30px;
+}
+
+.aside-menu li img {
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content {
     background-color: lightsalmon;
@@ -32,7 +65,7 @@ main .sidebar {
 /* footer  */
 footer {
     height: 90px;
-    background-color: black;
+    background-color: #404040;
     position: fixed;
     bottom: 0;    
     width: 100%;
@@ -47,9 +80,69 @@ footer.row {
 footer ul {
     display: flex;
     list-style-type: none;
+    align-items: center;
+    justify-content: center;
 }
+/* first ul footer  */
+.info-played {
+    display: flex;
+}
+.info-played ul.icons{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.icons li {
+    padding: 0 5px;
+    color: #959595;
+}
+
 footer img {
-    width: 30px;
+    width: 40px;
+    margin: 10px;
+   
+}
+.info-played h4 {
+    font-size: 14px;
+    line-height: 5px;
+}
+.info-played span {
+    font-size: 11px;
+    color: #959595;
 }
 
+/* second ul footer  */
+.playing i, .options i {
+    padding: 0 10px;
+}
+.far.fa-play-circle {
+    font-size: 2em; 
+}
 
+.playing ul:last-child {
+    padding-top: 10px;
+    font-size: 10px;
+}
+.playing ul:last-child li:nth-child(2), 
+.options ul li:last-child {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+div.barra {
+    width: 100%;
+    height: 4px;
+    background-color: #959595;
+    border-radius: 5px;
+    
+}
+div.barra2 {
+    width: 30%;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.options i {
+    font-size: 0.8em;
+}
