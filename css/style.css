@@ -1,11 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(20, 25, 34);
+    color: #959595;
+
 }
 .fluid-h {
-    height: 100vh;
-}
-
-main {
     height: 100vh;
 }
 
@@ -22,25 +21,65 @@ main {
 /* ASIDE-MENU  */
 main .aside-menu {
     background-color: black;
-    padding: 20px 10px;
+    padding: 20px 10px 10px;
     color: white;
     font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
 }
-.logo img {
+#logo {
     width: 130px;
-    padding-bottom: 20px;
+    margin: 10px 0;
 }
+
 .aside-menu ul li {
     color: #959595;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .aside-menu li img {
     width: 25px;
 }
 
-.aside-menu h3 {
+/* ASIDE logo  */
+.aside-logo {
+    flex-basis: auto;
+    flex-shrink: 0;
+}
+.aside-logo li {
+    display: flex;
+    align-items: center;   
+}
+
+/* ASIDE playlist */
+.aside-playlist{
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.aside-playlist h3 {
     padding: 20px 0 10px;
+    color: white;
+}
+.aside-playlist li {
+    padding: 8px 0;
+}
+
+.aside-playlist {
+    overflow-y: auto;
+}
+
+/* ASIDE bottom  */
+.aside-bottom {
+    flex-basis: auto;
+    flex-shrink: 0;
+}
+
+.aside-bottom {
+    color: #959595;
 }
 
 .fa-plus {
@@ -51,35 +90,40 @@ main .aside-menu {
     margin-right: 5px;
 }
 
+.aside-bottom img {
+    width: 20px;
+    margin-right: 5px;
+}
+.profile {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.aside-bottom .profile:last-child img{
+    background-color: grey;
+    border-radius: 50%;
+    width: 30px;
+}
+.aside-bottom .profile:last-child span {
+    font-size: 15px;
+    color: white;
+}
+hr {
+    color: #959595;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* CONTENT  */
 .content {
-    background-color: rgb(20, 25, 34);
     color: white;
     overflow-y: scroll;
-    height: 500px;
-
-
+    height: calc(100vh - 90px);
+    
 }
 /* TOP-NAV  */
 .top-nav {
     height: 90px;
-    width: calc((100% /12) * 10);
     top: 0; 
+    width: 100%;
     position: fixed;
     z-index: 1002;
     background-color: rgba(0, 0, 0, 0.5);
@@ -92,8 +136,7 @@ main .aside-menu {
     border: 1px solid white;
     padding: 10px 35px;
     border-radius: 30px; 
-    margin-right: 20px;
-
+    margin-right: 25px;
 }
 
 /* SUB-NAV  */
@@ -115,30 +158,40 @@ main .aside-menu {
     color: #959595;
 }
 
-/* playlist  */
-
+/* CONTENT Playlist  */
 .container-playlist {
     padding: 10px
 }
 
 .container-playlist h2 {
-    padding: 0 5px 20px ;
+    padding: 5px;
 }
 
 .single {
+    margin-top: 20px;
     width: calc(100% / 6);
     text-align: center;
     padding: 5px;
 }
+
 .img-container img {
     width: 100%;
 }
+
 .single span {
     font-size: 12px;
     color: #959595;
 }
 
+.container-playlist span {
+    padding: 0 5px;
+    font-size: 12px;
+    color: #959595;
+}
 
+.container-playlist:last-child img{
+    border-radius: 50%;
+}
 
 /* footer  */
 footer {

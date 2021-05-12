@@ -12,20 +12,22 @@
     <title>Spotify Fake</title>
 </head>
 <body>
+
     <div class="container-fluid fluid-h ">
+
         <main class="row">
+
             <!-- ASIDE-MENU  -->
             <div class="aside-menu col-lg-2 col-md-3 col-sm-4 col-xs-1">
-                <div class="logo">
-                    <img src="./img/logo.svg" alt="Spotify_Logo">
-                </div>
-                <ul>
+                <ul class="aside-logo">
+                    <li><img id="logo" src="./img/logo.svg" alt="Spotify_Logo"></li>
                     <li><img src="./img/home.svg" alt="Home"> Home</li>
                     <li><img src="./img/search.svg" alt="Cerca"> Cerca</li>
-                    <li><img src="./img/libreria.svg" alt=""> La tua libreria</li>
-                </ul>
-                <h3>PLAYLIST</h3>
-                <ul>
+                    <li><img src="./img/libreria.svg" alt="Libreria"> La tua libreria</li>
+                </ul>                
+
+                <ul class="aside-playlist">
+                    <li><h3>PLAYLIST</h3></li>
                     <li><i class="fas fa-plus"></i>Crea Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
@@ -34,13 +36,27 @@
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
-                </ul>
+                </ul>            
+
+                <div class="aside-bottom ">
+                    <div class="profile">
+                        <img src="./img/download.svg" alt="Dowload">
+                        <span>Installa app</span>
+                    </div>
+                    <hr>   
+                    <div class="profile">
+                        <img src="./img/profile.svg" alt="User-image">
+                        <span>John Doe</span>
+                    </div>                 
+                </div>
+
             </div>
 
 
             <div class="content col-lg-10 col-md-9 col-sm-8 col-xs-11">
+
                 <!-- TOP-NAV  -->
-                <div class="top-nav">                    
+                <div class="top-nav col-lg-10 col-md-9 col-sm-8 col-xs-11">                    
                     <div class="button">EFFETTUA L'UPGRADE</div>                    
                 </div>
 
@@ -54,9 +70,9 @@
                         <li>NUOVE USCITE</li>
                         <li>SCOPRI</li>
                     </ul>
-                </div>
+                </div>    
                 
-                
+                <!-- CONTENT playlist  -->                
                 <div class="container-playlist">
                     <h2>Recently played</h2>                    
                     <div class="container-fluid clearfix">
@@ -107,19 +123,39 @@
 
                 <div class="container-playlist">
                     <h2>Creato per John Doe</h2>
-                    <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                    <span>Più ascolti, più accurati saranno i suggerimenti.</span>
                     <div class="container-fluid clearfix">
                         <div class="single fl">
                             <div class="img-container">
                                 <img src="./img/radar.jpeg" alt="">
-
-
                             </div>
-
+                            <h4>Release Radar</h4>
                         </div>
-
+                        <div class="single fl">
+                            <div class="img-container">
+                                <img src="./img/mixdaily.jpeg" alt="">
+                            </div>
+                            <h4>Daily Mix 1</h4>
+                        </div>
                     </div>
-
+                </div>
+                <div class="container-playlist">
+                    <h2>Artisti più popolari</h2>
+                    <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+                    <div class="container-fluid clearfix">
+                        <div class="single fl">
+                            <div class="img-container">
+                                <img src="./img/radar.jpeg" alt="">
+                            </div>
+                            <h4>Release Radar</h4>
+                        </div>
+                        <div class="single fl">
+                            <div class="img-container">
+                                <img src="./img/mixdaily.jpeg" alt="">
+                            </div>
+                            <h4>Daily Mix 1</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
