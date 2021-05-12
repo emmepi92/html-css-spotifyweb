@@ -71,6 +71,9 @@ main .aside-menu {
     background-color: rgb(20, 25, 34);
     color: white;
     overflow-y: scroll;
+    height: 500px;
+
+
 }
 /* TOP-NAV  */
 .top-nav {
