@@ -1,0 +1,35 @@
+.container-fluid {
+    height: 100vh;
+    background-color: red;
+}
+
+main {
+    height: 100vh;
+}
+
+footer {
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    bottom: 0;    
+    width: 100%;
+    z-index: 1001;
+}
+main .sidebar {
+    background-color: salmon;
+}
+
+.content {
+    background-color: lightsalmon;
+}
+
+.top-nav {
+    height: 50px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1002;
+   background-color: rgba(255, 255, 255, 0.2);;
+}
+
+
