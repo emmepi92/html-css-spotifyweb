@@ -160,7 +160,6 @@ hr {
     align-items: center;
 }
 .sub-nav ul {
-    display: flex;
     list-style-type: none;
     width: 100%;
     justify-content: center;
