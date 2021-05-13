@@ -54,17 +54,19 @@ main .aside-menu {
     flex-basis: auto;
     flex-shrink: 0;
 }
-.aside-logo li:nth-child(2) {
+.aside-logo li:nth-child(2) a {
     color: white;
 }
-.aside-menu .aside-logo li:nth-child(2) svg path {
-    fill: #959595;
-}
-.aside-menu .aside-logo li:nth-child(2):hover svg path {
-    fill: white;
-}
+
 .aside-logo svg, .aside-logo2 svg {
     width: 25px;
+}
+
+.aside-logo svg path, .aside-logo2 svg path {
+    fill: #959595;
+}
+.aside-menu .aside-logo li:hover svg path {
+    fill: white;
 }
 .aside-logo li, .aside-logo2 li {
     display: flex;
@@ -74,13 +76,8 @@ main .aside-menu {
 .aside-menu li:hover {
     color: white;
 }
-.aside-logo li:hover svg,
-.aside-logo li:hover svg path {
-    fill: white;
-}
-.aside-bottom .profile:hover {
-    color: white;
-}
+
+
 /* ASIDE playlist */
 .aside-playlist{
     flex-basis: auto;
@@ -143,6 +140,9 @@ hr {
 }
 .aside-bottom span {
     display: none;
+}
+.aside-bottom .profile:hover {
+    color: white;
 }
 
 
