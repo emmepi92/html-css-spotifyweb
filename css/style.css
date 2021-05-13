@@ -28,6 +28,7 @@ main .aside-menu {
     flex-direction: column;
     height: calc(100vh - 90px);
 }
+
 #logo {
     width: 130px;
     margin: 10px 0;
@@ -44,10 +45,16 @@ main .aside-menu {
 
 /* ASIDE logo  */
 .aside-logo {
+    display: none;
+}
+.aside-logo2 {
+    flex-grow: 1;
+}
+.aside-logo, .aside-logo2 {
     flex-basis: auto;
     flex-shrink: 0;
 }
-.aside-logo li {
+.aside-logo li, .aside-logo2 li {
     display: flex;
     align-items: center;   
 }
@@ -58,6 +65,8 @@ main .aside-menu {
     flex-shrink: 1;
     flex-grow: 1;
     overflow: auto;
+    min-height: 150px;
+    display: none;
 }
 
 .aside-playlist h3 {
@@ -110,6 +119,10 @@ main .aside-menu {
 }
 hr {
     color: #959595;
+    display: none;
+}
+.aside-bottom span {
+    display: none;
 }
 
 /* CONTENT  */
@@ -221,7 +234,8 @@ footer ul {
 .info-played ul.icons{
     flex-grow: 1;
     display: flex;
-    justify-content: flex-end;
+    flex-basis: auto;
+    flex-direction: column;
 }
 
 ul.icons li {
@@ -231,22 +245,25 @@ ul.icons li {
 
 footer img {
     width: 40px;
-    margin: 10px;
-   
+    margin: 10px;   
 }
+
 .info-played h4 {
     font-size: 14px;
     line-height: 5px;
 }
+
 .info-played span {
     font-size: 11px;
     color: #959595;
 }
 
 /* second ul footer  */
+
 .playing i, .options i {
-    padding: 0 10px;
+    padding: 0 2px;
 }
+
 .far.fa-play-circle {
     font-size: 2em; 
 }
@@ -260,20 +277,54 @@ footer img {
     flex-grow: 1;
     padding: 0 10px;
 }
+
 div.barra {
     width: 100%;
     height: 4px;
     background-color: #959595;
-    border-radius: 5px;
-    
+    border-radius: 5px;    
 }
+
 div.barra2 {
     width: 30%;
     height: 4px;
     background-color: white;
     border-radius: 5px;
 }
-
 .options i {
     font-size: 0.8em;
 }
+
+ @media only screen and (min-width: 576px) {
+
+    .aside-logo{
+        display:block;
+    }
+    .aside-logo2 {
+        display: none;
+    }
+
+    .info-played ul.icons{
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .playing i, .options i {
+        padding: 0 5px;
+    }
+    .aside-playlist{ 
+        display: block; 
+    }
+
+    .aside-bottom span {
+        display: block;
+    }
+    hr {
+        display: block;
+    }
+   
+}
+/*
+@media only screen and (min-width: 768px)
+
+@media only screen and (min-width: 992px) */
