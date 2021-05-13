@@ -49,7 +49,6 @@ main .aside-menu {
 }
 .aside-logo2 {
     flex-grow: 1;
-    width: 20px;
 }
 .aside-logo, .aside-logo2 {
     flex-basis: auto;
