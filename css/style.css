@@ -330,8 +330,14 @@ ul.icons li:hover i {
     padding: 0 2px;
 }
 
+.fa-play-circle {
+    font-size: 2em;
+}
+.playing ul:first-child {
+    padding-bottom: 10px;
+}
+
 .playing ul:last-child li:not(li:nth-child(2)) {
-    padding-top: 10px;
     font-size: 10px;
 }
 .playing ul:last-child li:nth-child(2), 
