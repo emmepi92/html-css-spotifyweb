@@ -215,18 +215,15 @@ hr {
 .container-playlist {
     padding: 10px
 }
-
 .container-playlist h2 {
     padding: 5px;
 }
-
 .single {
     margin-top: 20px;
     width: calc(100% / 2);
     text-align: center;
     padding: 5px;
 }
-
 
 .img-container {
     position: relative;
