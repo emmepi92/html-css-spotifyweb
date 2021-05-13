@@ -154,10 +154,8 @@ hr {
 
 /* SUB-NAV  */
 .sub-nav {
-    height: 60px;
     margin-top: 90px;
     display: flex;
-    align-items: center;
 }
 .sub-nav ul {
     list-style-type: none;
