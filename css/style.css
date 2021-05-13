@@ -183,10 +183,13 @@ hr {
     height: 280px;
 }
 
+.img-container {
+    position: relative;
+}
+
 .img-container img {
     width: 100%;
 }
-
 
 .single span {
     font-size: 12px;
@@ -201,6 +204,22 @@ hr {
 
 .container-playlist:last-child img{
     border-radius: 50%;
+}
+
+.img-container:hover img {
+    filter: opacity(50%);
+}
+.img-container:hover .fa-play-circle {
+    display: block;
+    font-size: 50px;
+}
+.img-container .fa-play-circle {
+    color: white;
+    position: absolute;
+    display: none;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
 }
 
 /* footer  */
@@ -291,6 +310,10 @@ div.barra2 {
 .options i {
     font-size: 0.8em;
 }
+
+
+
+
 
  @media only screen and (min-width: 576px) {
 
