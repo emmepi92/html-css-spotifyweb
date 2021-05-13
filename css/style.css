@@ -182,7 +182,7 @@ hr {
 
 .single {
     margin-top: 20px;
-    width: calc(100% / 6);
+    width: calc(100% / 2);
     text-align: center;
     padding: 5px;
 }
@@ -324,7 +324,14 @@ div.barra2 {
     }
    
 }
-/*
-@media only screen and (min-width: 768px)
 
-@media only screen and (min-width: 992px) */
+@media only screen and (min-width: 768px) {
+    .single {
+        width: 25%;
+    }
+
+@media only screen and (min-width: 992px) {
+    .single {
+        width: calc(100% / 6);
+    }
+}
