@@ -226,9 +226,7 @@ hr {
     text-align: center;
     padding: 5px;
 }
-.container-playlist .container-fluid:nth-child(2) .single {
-    height: 280px;
-}
+
 
 .img-container {
     position: relative;
@@ -414,10 +412,16 @@ div.barra2 {
     .single {
         width: 25%;
     }
+    .container-playlist .container-fluid:nth-child(2) .single {
+        height: 280px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .single {
         width: calc(100% / 6);
+    }
+    .container-playlist .container-fluid:nth-child(2) .single {
+            height: auto;
     }
 }
