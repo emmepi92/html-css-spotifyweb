@@ -338,7 +338,7 @@ ul.icons li:hover i {
 }
 
 .playing ul:last-child li:not(li:nth-child(2)) {
-    font-size: 10px;
+    font-size: 11px;
 }
 .playing ul:last-child li:nth-child(2), 
 .options ul li:last-child {
