@@ -49,6 +49,7 @@ main .aside-menu {
 }
 .aside-logo2 {
     flex-grow: 1;
+    width: 20px;
 }
 .aside-logo, .aside-logo2 {
     flex-basis: auto;
@@ -80,20 +81,18 @@ main .aside-menu {
 .aside-playlist {
     overflow-y: auto;
 }
-
-/* ASIDE bottom  */
-.aside-bottom {
-    flex-basis: auto;
-    flex-shrink: 0;
-    color: #959595;
-}
-
 .fa-plus {
     font-size: 1.2em;
     color: black;
     background-color: gray;
     padding: 10px;
     margin-right: 5px;
+}
+/* ASIDE bottom  */
+.aside-bottom {
+    flex-basis: auto;
+    flex-shrink: 0;
+    color: #959595;
 }
 
 .aside-bottom img {
@@ -161,7 +160,7 @@ hr {
 }
 .sub-nav ul li {
     padding: 20px;
-    font-size: 14px;
+    font-size: 13px;
     color: #959595;
 }
 
@@ -179,6 +178,8 @@ hr {
     width: calc(100% / 2);
     text-align: center;
     padding: 5px;
+}
+.container-playlist .container-fluid:nth-child(2) .single {
     height: 280px;
 }
 
