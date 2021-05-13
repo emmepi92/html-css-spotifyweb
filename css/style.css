@@ -85,9 +85,6 @@ main .aside-menu {
 .aside-bottom {
     flex-basis: auto;
     flex-shrink: 0;
-}
-
-.aside-bottom {
     color: #959595;
 }
 
@@ -182,11 +179,13 @@ hr {
     width: calc(100% / 2);
     text-align: center;
     padding: 5px;
+    height: 280px;
 }
 
 .img-container img {
     width: 100%;
 }
+
 
 .single span {
     font-size: 12px;
@@ -326,6 +325,7 @@ div.barra2 {
     .single {
         width: 25%;
     }
+}
 
 @media only screen and (min-width: 992px) {
     .single {
