@@ -367,6 +367,7 @@ div.barra2 {
 }
 .barra i.fa-circle {
     display: none;
+    margin-left: -5px;
 }
 .barra:hover .barra2 {
     background-color: greenyellow;
