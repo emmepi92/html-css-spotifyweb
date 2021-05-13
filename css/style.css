@@ -330,8 +330,8 @@ ul.icons li {
 ul.icons li:hover i {
     color: white;
 }
-/* second ul footer  */
 
+/* second ul footer  */
 .playing i, .options i {
     padding: 0 2px;
 }
@@ -367,7 +367,7 @@ div.barra2 {
 }
 .barra i.fa-circle {
     display: none;
-    margin-left: -5px;
+    margin-left: -10px;
 }
 .barra:hover .barra2 {
     background-color: greenyellow;
@@ -376,13 +376,13 @@ div.barra2 {
     display: block;
 }
 
-
 .playing i.fa-play-circle:hover {
     transform: scale(1.1, 1.1);
 }
 .options i {
     font-size: 0.8em;
 }
+
 @media only screen and (min-width: 576px) {
     .aside-logo{
         display:block;
