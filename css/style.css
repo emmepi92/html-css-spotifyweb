@@ -60,6 +60,9 @@ main .aside-menu {
 .aside-menu .aside-logo li:nth-child(2) svg path {
     fill: #959595;
 }
+.aside-menu .aside-logo li:nth-child(2):hover svg path {
+    fill: white;
+}
 .aside-logo svg, .aside-logo2 svg {
     width: 25px;
 }
@@ -71,7 +74,8 @@ main .aside-menu {
 .aside-menu li:hover {
     color: white;
 }
-.aside-logo li:hover svg {
+.aside-logo li:hover svg,
+.aside-logo li:hover svg path {
     fill: white;
 }
 .aside-bottom .profile:hover {
@@ -347,16 +351,14 @@ div.barra2 {
 .barra:hover .barra2 {
     background-color: greenyellow;
 }
+
+.playing i.fa-play-circle:hover {
+    transform: scale(1.1, 1.1);
+}
 .options i {
     font-size: 0.8em;
 }
-
-
-
-
-
- @media only screen and (min-width: 576px) {
-
+@media only screen and (min-width: 576px) {
     .aside-logo{
         display:block;
     }
@@ -381,8 +383,7 @@ div.barra2 {
     }
     hr {
         display: block;
-    }
-   
+    }   
 }
 
 @media only screen and (min-width: 768px) {
