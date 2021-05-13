@@ -25,7 +25,7 @@ a {
 /* ASIDE-MENU  */
 main .aside-menu {
     background-color: black;
-    padding: 20px 10px 10px;
+    padding: 20px 0 10px;
     color: #959595;
     font-size: 13px;
     display: flex;
@@ -33,13 +33,14 @@ main .aside-menu {
     height: calc(100vh - 90px);
 }
 
+
 #logo {
     width: 130px;
     margin: 10px 0;
 }
 
-.aside-menu ul li {
-    padding: 5px 0;
+.aside-menu ul li, .aside-bottom {
+    padding: 5px 10px;
 }
 
 /* ASIDE logo  */
@@ -53,6 +54,9 @@ main .aside-menu {
 .aside-logo, .aside-logo2 {
     flex-basis: auto;
     flex-shrink: 0;
+}
+.aside-logo li:nth-child(2) {
+    border-left: 2px solid greenyellow;
 }
 .aside-logo li:nth-child(2) a {
     color: white;
@@ -194,6 +198,18 @@ hr {
 }
 .sub-nav ul li:hover {
     color: white;
+}
+
+.sub-nav li:first-child {
+    position: relative;
+}
+.green-row {
+    position: absolute;
+    height: 2px;
+    width: 30%;
+    background-color: greenyellow;
+    left: 35%;
+    margin-top: 3px;
 }
 
 /* CONTENT Playlist  */
