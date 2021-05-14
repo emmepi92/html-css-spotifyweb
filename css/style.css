@@ -353,6 +353,7 @@ div.bar {
     border-radius: 5px;   
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 div.bar-2 {
@@ -360,10 +361,14 @@ div.bar-2 {
     height: 4px;
     background-color: white;
     border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .bar i.fa-circle {
     display: none;
-    margin-left: -10px;
+    padding: 0;
 }
 .bar:hover .bar-2 {
     background-color: greenyellow;
