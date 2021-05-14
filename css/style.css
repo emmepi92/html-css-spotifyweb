@@ -241,11 +241,13 @@ hr {
 }
 
 .container-playlist span {
-    padding: 0 5px;
+    
     font-size: 12px;
     color: #959595;
 }
-
+.single h4 {
+    padding: 15px 0;
+}
 .img-container .fa-play-circle {
     color: white;
     position: absolute;
@@ -291,8 +293,8 @@ footer ul {
 }
 
 footer img {
-    width: 40px;
-    margin: 10px;   
+    width: 30px;
+    margin: 5px;   
 }
 
 .info-played h4 {
@@ -331,7 +333,7 @@ ul.icons li:hover i {
 }
 
 .fa-play-circle {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .playing ul:first-child {
     padding-bottom: 10px;
@@ -410,6 +412,13 @@ div.bar-2 {
     hr {
         display: block;
     }   
+    footer img {
+        width: 40px;
+        margin: 10px;
+    }
+    .fa-play-circle {
+        font-size: 2em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -417,7 +426,7 @@ div.bar-2 {
         width: 25%;
     }
     .container-playlist .container-fluid:nth-child(2) .single {
-        height: 280px;
+        height: 310px;
     }
 }
 
