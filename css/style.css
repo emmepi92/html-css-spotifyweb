@@ -36,8 +36,11 @@ main .aside-menu {
 
 .aside-menu ul li, 
 .aside-bottom {
-    padding: 5px 10px;
+    padding: 5px;
+    justify-content: center;
 }
+
+
 
 /* ASIDE logo  */
 #logo {
@@ -121,14 +124,14 @@ main .aside-menu {
 }
 
 .aside-bottom img {
-    width: 20px;
-    margin-right: 5px;
     color: #959595;
+    width: 25px;
 }
 .profile {
-    padding: 10px 0;
+    padding: 5px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #profile {
     background-color: grey;
@@ -392,6 +395,22 @@ div.bar-2 {
     }
     .aside-logo-xs {
         display: none;
+    }
+
+    .aside-menu ul li, 
+    .aside-bottom {
+    padding: 5px 10px;
+    justify-content: flex-start;
+    }
+    .aside-bottom img {
+        width: 20px; 
+    }
+    .aside-bottom img {
+        margin-right: 5px;
+    }
+    .profile {
+        justify-content: flex-start;
+        padding: 10px 0;
     }
     
     .info-played ul.icons{
