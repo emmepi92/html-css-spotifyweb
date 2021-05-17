@@ -260,11 +260,11 @@ hr {
     left:50%;
 }
 
-.img-container:hover img {
+.single:hover img {
     filter: opacity(50%);
 }
 
-.img-container:hover .fa-play-circle {
+.single:hover .fa-play-circle {
     display: block;
     font-size: 50px;
 }
