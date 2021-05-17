@@ -32,6 +32,13 @@ main .aside-menu {
     flex-direction: column;
     height: calc(100vh - 90px);
     justify-content: space-between; /* useful in xs  */
+
+    /* 
+    use overflow:hidden or footer in fixed 
+    to cover the spotify logo 
+    when resize the height 
+    */
+    overflow: hidden;
 }
 
 .aside-menu ul li, 
@@ -273,11 +280,11 @@ hr {
 footer {
     height: 90px;
     background-color: #404040;
-    position: fixed;
-    bottom: 0;    
     width: 100%;
-    z-index: 1001;
     color: white;
+    /* position: fixed; */
+    /* bottom: 0;     */
+    /* z-index: 1001; */
 }
 
 footer.row {
